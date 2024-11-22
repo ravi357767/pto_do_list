@@ -77,8 +77,9 @@ flutter:
   fonts:
     - family: Mainfont
       fonts:
-        - asset: assets/font/Outfit-VariableFont_wght.ttf
-        - asset: assets/font/Outfit-ExtraBold.ttf
+        - asset: assets/font/Lato-Bold.ttf
+        # - asset: assets/font/Outfit-VariableFont_wght.ttf
+        # - asset: assets/font/Outfit-ExtraBold.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

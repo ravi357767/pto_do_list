@@ -57,24 +57,25 @@ class DashboardScreen extends StatelessWidget {
                 controller: taskController,
                 decoration: InputDecoration(
                   hintText: 'Add any task to Remember...',
+                  suffixIcon: Icon(Icons.add_task_rounded),
                   fillColor: Colors.white,
                   filled: true,
                   enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(50),
                     borderSide: BorderSide(
                       color: Colors.white,
                       width: 1.5,
                     ),
                   ),
                   focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(50),
                     borderSide: BorderSide(
                       color: Colors.green,
                       width: 1.5,
                     ),
                   ),
                   disabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(50),
                     borderSide: BorderSide(
                       color: Colors.white,
                       width: 1.5,
