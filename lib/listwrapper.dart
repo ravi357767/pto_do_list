@@ -9,7 +9,7 @@ class Listwrapper extends StatelessWidget {
       children: [
         Container(
           width: double.infinity,
-          height: 100,
+          height: 80,
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
@@ -26,6 +26,50 @@ class Listwrapper extends StatelessWidget {
           child: Container(
             padding: EdgeInsets.all(8),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'This is a Text Message',
+                  style: TextStyle(
+                    fontFamily: 'Mainfont',
+                    fontSize: 17,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.delete,
+                      color: Colors.white,
+                      size: 30,
+                    ))
+              ],
+            ),
+          ),
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        Container(
+          width: double.infinity,
+          height: 80,
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Color(0xff60efff),
+                Color(0xff0061ff),
+              ],
+            ),
+            borderRadius: BorderRadius.circular(5),
+            border: Border.all(
+              color: const Color.fromARGB(255, 252, 241, 241),
+              width: 2,
+            ),
+          ),
+          child: Container(
+            padding: EdgeInsets.all(8),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
                   'This is a Text Message',

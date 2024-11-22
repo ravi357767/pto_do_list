@@ -48,57 +48,60 @@ class DashboardScreen extends StatelessWidget {
             ],
           ),
         ),
-        child: Column(
-          children: [
-            TextField(
-              decoration: InputDecoration(
-                hintText: 'Add any task to Remember...',
-                fillColor: Colors.white,
-                filled: true,
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(5),
-                  borderSide: BorderSide(
-                    color: Colors.white,
-                    width: 1.5,
+        child: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Column(
+            children: [
+              TextField(
+                decoration: InputDecoration(
+                  hintText: 'Add any task to Remember...',
+                  fillColor: Colors.white,
+                  filled: true,
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(5),
+                    borderSide: BorderSide(
+                      color: Colors.white,
+                      width: 1.5,
+                    ),
                   ),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(5),
-                  borderSide: BorderSide(
-                    color: Colors.green,
-                    width: 1.5,
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(5),
+                    borderSide: BorderSide(
+                      color: Colors.green,
+                      width: 1.5,
+                    ),
                   ),
-                ),
-                disabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(5),
-                  borderSide: BorderSide(
-                    color: Colors.white,
-                    width: 1.5,
+                  disabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(5),
+                    borderSide: BorderSide(
+                      color: Colors.white,
+                      width: 1.5,
+                    ),
                   ),
                 ),
               ),
-            ),
-            SizedBox(
-              height: 15,
-            ),
-            SizedBox(
-              width: double.infinity,
-              child: ElevatedButton(
-                  onPressed: () {},
-                  child: Text(
-                    'Add Task',
-                    style: TextStyle(
-                      fontFamily: 'Mainfont',
-                      fontWeight: FontWeight.w700,
-                      fontSize: 18,
-                    ),
-                  )),
-            ),
-            SizedBox(
-              height: 25,
-            ),
-            Listwrapper(),
-          ],
+              SizedBox(
+                height: 15,
+              ),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Add Task',
+                      style: TextStyle(
+                        fontFamily: 'Mainfont',
+                        fontWeight: FontWeight.w700,
+                        fontSize: 18,
+                      ),
+                    )),
+              ),
+              SizedBox(
+                height: 25,
+              ),
+              Listwrapper(),
+            ],
+          ),
         ),
       ),
     );
