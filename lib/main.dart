@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers
 
 import 'package:flutter/material.dart';
+import 'package:pto_do_list/listwrapper.dart';
 
 void main() {
   runApp(ToDoList());
@@ -49,19 +50,54 @@ class DashboardScreen extends StatelessWidget {
         ),
         child: Column(
           children: [
-            Container(
-              width: double.infinity,
-              height: 150,
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [
-                    Color(0xff0061ff),
-                    Color(0xff60efff),
-                  ],
+            TextField(
+              decoration: InputDecoration(
+                hintText: 'Add any task to Remember...',
+                fillColor: Colors.white,
+                filled: true,
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(5),
+                  borderSide: BorderSide(
+                    color: Colors.white,
+                    width: 1.5,
+                  ),
                 ),
-                borderRadius: BorderRadius.circular(5),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(5),
+                  borderSide: BorderSide(
+                    color: Colors.green,
+                    width: 1.5,
+                  ),
+                ),
+                disabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(5),
+                  borderSide: BorderSide(
+                    color: Colors.white,
+                    width: 1.5,
+                  ),
+                ),
               ),
             ),
+            SizedBox(
+              height: 15,
+            ),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Add Task',
+                    style: TextStyle(
+                      fontFamily: 'Mainfont',
+                      fontWeight: FontWeight.w700,
+                      fontSize: 18,
+                    ),
+                  )),
+            ),
+            SizedBox(
+              height: 25,
+            ),
+            Listwrapper(),
           ],
         ),
       ),
