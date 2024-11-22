@@ -22,6 +22,7 @@ class ToDoList extends StatelessWidget {
 }
 
 class DashboardScreen extends StatelessWidget {
+  var taskController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,6 +54,7 @@ class DashboardScreen extends StatelessWidget {
           child: Column(
             children: [
               TextField(
+                controller: taskController,
                 decoration: InputDecoration(
                   hintText: 'Add any task to Remember...',
                   fillColor: Colors.white,
@@ -107,3 +109,5 @@ class DashboardScreen extends StatelessWidget {
     );
   }
 }
+
+class SetState {}

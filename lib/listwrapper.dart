@@ -72,7 +72,7 @@ class Listwrapper extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  'This is a Text Message',
+                  'This is a Text Message ',
                   style: TextStyle(
                     fontFamily: 'Mainfont',
                     fontSize: 17,
